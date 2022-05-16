@@ -19,6 +19,10 @@ class Person < Nameable
     false
   end
 
+  def correct_name
+    @name
+  end
+
   # private methods
   private
 
@@ -26,9 +30,5 @@ class Person < Nameable
     return true if age >= 18
 
     false
-  end
-
-  def correct_name
-    @name
   end
 end
