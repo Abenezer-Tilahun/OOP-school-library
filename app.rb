@@ -28,7 +28,7 @@ class App
   def create_person
     puts '*' * 70
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
-    option = gets.chomp
+    option = gets.chomp.to_i
     case option
     when '1'
       create_student
