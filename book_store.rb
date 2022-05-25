@@ -1,9 +1,11 @@
 require './book'
+require './data'
+require 'json'
 class Bookstore
   attr_accessor :books
 
   def initialize
-    @books = []
+    @books = read_books
   end
 
   def booklist
@@ -21,6 +23,7 @@ class Bookstore
     author = gets.chomp
     book = Book.new(title, author)
     @books.push(book)
+    write_books(@books)
     puts 'Book created successfully'
     puts '*' * 70
   end
