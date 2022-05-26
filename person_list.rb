@@ -1,9 +1,11 @@
 require './person'
+require './data'
+require 'json'
 class Personlist
   attr_accessor :people
 
   def initialize
-    @people = []
+    @people = read_people
   end
 
   def peoplelist
