@@ -48,12 +48,12 @@ def write_people(persons)
             end
   end
 
-  File.write('./data/people_file.json', JSON.generate(temp)).to_s
+  File.write('./Data/people_file.json', JSON.generate(temp)).to_s
 end
 
 def read_people
   people = []
-  JSON.parse(File.read('./data/people_file.json')).each do |person|
+  JSON.parse(File.read('./Data/people_file.json')).each do |person|
     people << case person['role']
               when 'Student'
                 Student.new(person['age'], person['name'], parent_permission: person['parent_permission'])
