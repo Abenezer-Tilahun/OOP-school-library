@@ -1,3 +1,4 @@
+require 'pry'
 require './person'
 require './data'
 require 'json'
@@ -39,6 +40,8 @@ class Personlist
     print 'teacher specialization: '
     specialization = gets.chomp
     teacher = Teacher.new(age, specialization, name, parent_permission: true)
+    puts teacher.specialization
+    binding.pry
     puts 'Teacher created successfully'
     @people.push(teacher)
     puts '*' * 70
