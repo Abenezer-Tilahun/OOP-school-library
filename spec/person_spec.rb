@@ -19,7 +19,7 @@ describe Person do
     end
 
     it 'should return true when we call the can_use_services? method for a student who\'s age is greater than 18 and doesn\'t have his parent\'s permission' do
-      new_student = Person.new(18,  name, parent_permission: false)
+      new_student = Person.new(18, name, parent_permission: false)
       expect(new_student.can_use_services?).to eq true
     end
 
