@@ -1,5 +1,4 @@
-require './book'
-require './student'
+require 'spec_helper'
 
 describe Book do
   before :each do
@@ -29,9 +28,9 @@ describe Book do
   end
 
   it 'add a rental' do
-    @student = Student.new('12', 'lynn')
+    @student = Student.new('26', 'vab')
     expect(@book.rentals.length).to eql(0)
-    @book.add_rental('2022-03-03', @student)
+    @book.add_rental('2022-03-26', @student)
     expect(@book.rentals.length).to eql(1)
   end
 end

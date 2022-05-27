@@ -1,5 +1,4 @@
-require_relative '../teacher'
-require_relative '../person'
+require 'spec_helper'
 
 describe Teacher do 
     context 'When testing the teacher class' do

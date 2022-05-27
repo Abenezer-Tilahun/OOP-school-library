@@ -1,10 +1,11 @@
-require './student'
+require 'spec_helper'
 
 describe Student do
     context 'When testing the person class' do
         name = 'v'
         age = 29
-        student = Student.new(age,name)
+        classroom = 'Ruby'
+    student = Student.new(age, name)
 
         it 'validate the age of student' do
             expect(student.age).to eq age
