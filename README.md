@@ -7,6 +7,7 @@ This is an implementation of a tool to record what books are in the library and 
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
+- Added unit test for classes using Rspec.
 
 ## General info
 This is project made with Ruby, with a basic UI(command line). User can create Person(teacher and student) .
@@ -19,6 +20,7 @@ Project is built by:using:
 * Ruby 
 * OOP principles 
 * Apply SOLID principles
+* Apply Unit test using Rspec
 
 And created with
 
@@ -41,6 +43,7 @@ To get a local copy up and running follow these simple example steps.
 or
 
 - ruby main.rb
+- To Test school library Run rspec spec file.rb(Just like rspec spec .\spec\classroom_spec.rb)
 
 ## Author
 
